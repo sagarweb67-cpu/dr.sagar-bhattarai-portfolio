@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Sagar Bhattarai</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background:#0A192F;
+  color:#fff;
+  scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(10,25,47,0.9);
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+/* Hero */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 60px;
+}
+
+.hero img{
+  width:300px;
+  border-radius:50%;
+  box-shadow:0 0 30px #00D1FF;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 25px;
+  margin-top:15px;
+  margin-right:10px;
+  border-radius:5px;
+  text-decoration:none;
+}
+
+.primary{
+  background:#00D1FF;
+  color:#000;
+}
+
+.outline{
+  border:1px solid #00D1FF;
+  color:#00D1FF;
+}
+
+/* Sections */
+section{
+  padding:100px 60px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#112240;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px #00D1FF;
+}
+
+/* Stats */
+.stats{
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+}
+
+.stats h2{
+  color:#00D1FF;
+  font-size:40px;
+}
+
+/* Images */
+.section-img{
+  width:100%;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+/* Contact */
+.contact{
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020c1b;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div><b>Dr. Sagar</b></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div>
+    <h1>Dr. Sagar Bhattarai</h1>
+    <p>Scientist & Innovator</p>
+    <p>World’s Top 2% Scientist (2024–2025)</p>
+    <a href="#research" class="btn primary">View Research</a>
+    <a href="#contact" class="btn outline">Contact</a>
+  </div>
+
+  <!-- Replace image link -->
+  <img src="https://via.placeholder.com/300" alt="Profile">
+</div>
+
+<!-- About -->
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Dr. Sagar Bhattarai is a leading researcher in solar energy and perovskite solar cells.
+    With 100+ publications, global collaborations, and innovative research,
+    he focuses on high-efficiency and low-cost renewable energy solutions.
+  </p>
+  <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" class="section-img">
+</section>
+
+<!-- Expertise -->
+<section>
+  <h2>Expertise</h2>
+  <div class="cards">
+    <div class="card">☀️ Solar Energy Systems</div>
+    <div class="card">🔬 Perovskite Solar Cells</div>
+    <div class="card">⚡ Photovoltaic Technology</div>
+    <div class="card">🌱 Renewable Innovation</div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section>
+  <div class="stats">
+    <div>
+      <h2>100+</h2>
+      <p>Publications</p>
+    </div>
+    <div>
+      <h2>30%</h2>
+      <p>Efficiency</p>
+    </div>
+    <div>
+      <h2>Top 2%</h2>
+      <p>Scientist</p>
+    </div>
+  </div>
+</section>
+
+<!-- Research -->
+<section id="research">
+  <h2>Research</h2>
+  <div class="cards">
+    <div class="card">
+      Perovskite Solar Cell Design<br>
+      High efficiency up to 30%
+    </div>
+    <div class="card">
+      Lead-Free Solar Technology<br>
+      Eco-friendly materials
+    </div>
+    <div class="card">
+      Advanced PV Systems<br>
+      Next-gen energy solutions
+    </div>
+  </div>
+  <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" class="section-img">
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects & Innovations</h2>
+  <div class="cards">
+    <div class="card">Floating Solar Panels</div>
+    <div class="card">Solar Powered EV</div>
+    <div class="card">Organic Solar Cells</div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: sagarbhattarai012@gmail.com</p>
+  <a href="mailto:sagarbhattarai012@gmail.com" class="btn primary">Send Email</a>
+</section>
+
+<!-- Footer -->
+<footer>
+  Powered by Innovation & Solar Energy
+</footer>
+
+</body>
+</html>
